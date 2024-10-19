@@ -1,4 +1,73 @@
-= Index page
-ifndef::imagesdir[:imagesdir: images]
+Konstantin Wetscher
 
-image::img.png[]
+== Projektantrag: Schnittstelle für Teschnische Datenüberwachung
+
+=== Zusammenfassung
+Das Ziel dieses Projekts ist die Entwicklung einer plattformübergreifenden Software,
+die es Nutzern ermöglicht, technische Daten ihrer vernetzten Geräte und Systeme zentral über eine Anwendung auf Mobilgeräten (Smartphones, Tablets)
+sowie Desktop-Computern abzurufen. Die Software wird in der Lage sein,
+Echtzeitinformationen zu verschiedenen technischen Komponenten eines Haushalts oder eines Fuhrparks zu liefern.
+Beispiele umfassen den Ladezustand eines Elektrofahrzeugs,
+den Zustand der Sicherheitssysteme eines Hauses, den Status von Solaranlagen sowie den Gesamtstromverbrauch.
+
+Das Ziel ist es, Benutzern durch diese zentrale Schnittstelle einen einfachen Zugang zu wichtigen technischen Informationen zu bieten und gleichzeitig die Benutzerfreundlichkeit,
+Effizienz und Sicherheit der angeschlossenen Systeme zu maximieren / erhöhen.
+
+==  1. Zentralisierte Datenüberwachung
+Das zentrale Merkmal des Projekts ist die Fähigkeit,
+technische Daten von verschiedenen Geräten in einer einzigen,
+übersichtlichen Oberfläche anzuzeigen.
+Dies erlaubt dem Benutzer, auf einen Blick den Status all seiner wichtigen Systeme zu überprüfen.
+Dazu zählen beispielsweise:
+
+*Elektrofahrzeuge*: Abfragen des Ladezustands der Batterie, Informationen zur verbleibenden Reichweite und Benachrichtigungen über den Abschluss des Ladevorgangs. +
+*Sicherheits- und Zugangssysteme*: Statusabfragen, ob Türen und Fenster abgeschlossen sind, sowie die Aktivierung von Alarmanlagen oder Überwachungskameras. +
+*Haustechnik*: Informationen über den Zustand von Heizungs-, Lüftungs- oder Kühlsystemen sowie Wasserverbrauch.  +
+*Energieverwaltung*: Überblick über den Gesamtstromverbrauch des Haushalts, den aktuellen Output von Solaranlagen und den aktuellen Strompreis. +
+Diese zentrale Übersicht wird es den Nutzern ermöglichen, rasch auf Probleme zu reagieren und den Betrieb ihrer Systeme effizient zu steuern.
+
+== 2. Geräte- und Plattformübergreifende Kompatibilität
+Ein wichtiger Aspekt der Anwendung ist die plattformübergreifende Kompatibilität,
+die sicherstellt, dass die Benutzer die Anwendung auf verschiedenen Endgeräten,
+unabhängig vom Betriebssystem, verwenden können.
+Die Anwendung wird für folgende Plattformen entwickelt:
+
+Mobilgeräte: Android, iOS +
+Desktop-Computer: Windows, macOS, Linux +
+
+Die Anwendung wird über standardisierte Schnittstellen (APIs) mit verschiedenen Geräten kommunizieren,
+um die relevanten Daten abzurufen. Dies umfasst smarte Haushaltsgeräte, Elektroautos,
+Solaranlagen, Alarmanlagen und andere vernetzte Systeme.
+Ein Fokus liegt auf der Zusammenarbeitsfähigkeit durch die Unterstützung gängiger Protokolle wie
+REST und WebSockets, um eine reibungslose Kommunikation mit unterschiedlichen Geräten sicherzustellen.
+
+== 3. Zustands- und Sicherheitsüberwachung
+Die Anwendung wird nicht nur als Informationsquelle dienen,
+sondern auch als Sicherheitsüberwachungs- und Kontrollsystem.
+So können die Nutzer sicherstellen, dass:
+
+Türen und Fenster ordnungsgemäß verriegelt sind, wenn das Haus verlassen wird. +
+Rauch- oder Gasmelder aktiv und funktionsfähig sind. +
+Überwachungskameras oder Bewegungssensoren korrekt arbeiten und aufgezeichnete Daten in Echtzeit bereitgestellt werden. +
+Durch die Integration von Push-Benachrichtigungen können Nutzer sofort über sicherheitsrelevante Vorfälle informiert werden,
+wie z.B den Einbruchversuch in ein Gebäude oder das Auslösen eines Rauchmelders. Die Benutzer können diese Vorfälle dann sofort über die Anwendung einsehen und entsprechende Maßnahmen ergreifen. +
+
+== 4. Nachhaltigkeits- und Verbrauchsmanagement
+Ein weiterer Schwerpunkt des Projekts ist die Unterstützung nachhaltigen Ressourcenmanagements.
+Die Anwendung bietet die Möglichkeit, die Energienutzung zu überwachen,
+potenzielle Einsparungen zu identifizieren und nachhaltigere Praktiken zu fördern.
+Wichtige Funktionen in diesem Bereich sind:
+
+*Live-Überwachung des Stromverbrauchs in Echtzeit*, sowohl für den Gesamtverbrauch als auch für einzelne Geräte oder Systeme. Dies könnte in Form eines Dashboards oder einer grafischen Auswertung präsentiert werden. +
+*Solaranlagen-Management*: Anzeige des Energieoutputs der Solaranlage, der Eigenverbrauchsquote sowie des Einspeiseüberschusses ins Netz. +
+*Analyse von Energieverbrauchsmustern*: Langfristige Datenspeicherung und -analyse, um ungewöhnliche Verbräuche zu identifizieren und Empfehlungen zur Optimierung der Energienutzung zu geben. +
+Die Anwendung könnte auch auf zukünftige Entwicklungen im Bereich Smart Grids vorbereitet sein, sodass Nutzer von dynamischen Strompreismodellen profitieren und ihre Verbrauchsmuster entsprechend anpassen können.
+
+== Erweiterte Funktionen und Zukunftsperspektive
+
+Zukünftige Erweiterungen des Projekts könnten die Integration von künstlicher Intelligenz (KI)
+zur automatischen Erkennung von Optimierungsmöglichkeiten im Haushalt umfassen.
+Beispielsweise könnte die Anwendung in der Lage sein,
+durch Mustererkennung ungewöhnliche Aktivitäten zu erkennen oder Empfehlungen zur Reduzierung des Stromverbrauchs zu geben.
+Auch die Integration in bestehende Smart-Home-Systeme
+oder die Unterstützung für Sprachassistenten wie Amazon Alexa oder Google Assistant könnte den Funktionsumfang weiter ausbauen.
